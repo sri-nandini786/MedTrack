@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to MedTrack</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6ab7ee, #561212);
+        }
+
+        .card {
+            background-color: rgb(163, 236, 241);
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        .card h1 {
+            color: #0d47a1;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .buttons a {
+            padding: 10px 20px;
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s ease;
+        }
+
+        .buttons a:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Welcome to MedTrack</h1>
+        <p>Your complete healthcare management solution</p>
+        <div class="buttons">
+            <a href="{{ url_for('login') }}" class="btn">Get Started</a>
+        </div>
+    </div>
+</body>
+</html>
