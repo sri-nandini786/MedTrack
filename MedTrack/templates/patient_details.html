@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Details - MedTrack</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #6ab7ee, #561212);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .details-box {
+            background: white;
+            color: black;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 12px rgba(0,0,0,0.2);
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #0b3d91;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #0b3d91;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s; /* Added transition for hover effect */
+        }
+        a:hover {
+            background-color: #0a2e6d; /* Added hover effect for the link */
+        }
+    </style>
+</head>
+<body>
+    <div class="details-box">
+        <h2>Patient Details</h2>
+        <p><strong>Username:</strong> {{ username }}</p>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <a href="{{ url_for('patient_dashboard') }}">Back to Dashboard</a>
+    </div>
+</body>
+</html>

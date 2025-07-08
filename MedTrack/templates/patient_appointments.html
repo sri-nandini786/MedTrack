@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Appointments</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: linear-gradient(135deg, #6ab7ee, #561212);
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #0d47a1;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #0d47a1;
+      color: white;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    .no-data {
+      text-align: center;
+      color: #888;
+      margin-top: 40px;
+      font-size: 1.1em;
+    }
+    a.back-home {
+      display: block;
+      margin-top: 30px;
+      text-align: center;
+      color: #0d47a1;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a.back-home:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Appointments</h1>
+
+  {% if appointments %}
+  <table>
+    <thead>
+      <tr>
+        <th>Patient</th>
+        <th>Doctor</th>
+        <th>Date</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for appt in appointments %}
+      <tr>
+        <td>{{ appt.patient }}</td>
+        <td>{{ appt.doctor }}</td>
+        <td>{{ appt.date }}</td>
+        <td>{{ appt.time }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <p class="no-data">You don't have any appointments yet.</p>
+  {% endif %}
+
+  <a class="back-home" href="{{ url_for('home') }}">← Back to Home</a>
+</body>
+</html>
