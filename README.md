@@ -19,13 +19,13 @@ A Flask-based **Medical Appointment Management System** to simplify patient-doct
 ## 📷 Screenshots
 
 ### 1️⃣ Home Page
-_Add screenshot here later._
+<img src="https://via.placeholder.com/800x400?text=Home+Page+Screenshot+Coming+Soon" alt="Home Page Screenshot" />
 
 ### 2️⃣ Doctor Dashboard
-_Add screenshot here later._
+<img src="https://via.placeholder.com/800x400?text=Doctor+Dashboard+Screenshot+Coming+Soon" alt="Doctor Dashboard Screenshot" />
 
 ### 3️⃣ Appointment Booking
-_Add screenshot here later._
+<img src="https://via.placeholder.com/800x400?text=Appointment+Booking+Screenshot+Coming+Soon" alt="Appointment Booking Screenshot" />
 
 ---
 
