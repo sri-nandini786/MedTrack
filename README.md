@@ -44,6 +44,13 @@ Full project documentation including:
 
 ---
 
+## 🎥 Demo
+
+[Watch the MedTrack demo video here](https://drive.google.com/file/d/1QCGv8Mr73XdHQiFj486hJpaIMEqJ4czh/view?usp=sharing)
+
+
+---
+
 ## ⚙️ Tech Stack
 
 - Python Flask
