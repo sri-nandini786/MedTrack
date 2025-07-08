@@ -19,13 +19,14 @@ A Flask-based **Medical Appointment Management System** to simplify patient-doct
 ## 📷 Screenshots
 
 ### 🏠 1️⃣ Home Page
-![Home Page](screenshots/home_page.png)
+![Home Page](MedTrack/screenshots/home_page.png.png)
 
 ### 🩺 2️⃣ Doctor Dashboard
-![Doctor Dashboard](screenshots/doctor_dashboard.png)
+![Doctor Dashboard](MedTrack/screenshots/doctor_dashboard.png.png)
 
 ### 📅 3️⃣ Appointment Booking
-![Appointment Booking](screenshots/appointment_booking.png)
+![Appointment Booking](MedTrack/screenshots/appointment_booking.png.png)
+
 
 
 ---
