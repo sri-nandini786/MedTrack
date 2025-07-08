@@ -1,10 +1,11 @@
 /* Base Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6ab7ee, #36cfb0);
+
+    padding: 20px;
     margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+    min-height: 100vh;
 }
 
 .container {

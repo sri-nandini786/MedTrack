@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Dashboard - MedTrack</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #6ab7ee, #561212);
+            background: linear-gradient(135deg, #6ab7ee, #36cfb0);
             color: white;
             padding: 40px;
         }
@@ -28,15 +28,27 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
             width: 250px;
             margin: 10px;
-            text-align: center; /* Center text in cards */
+            text-align: center;
+            transition: transform 0.2s; /* Add a hover effect */
         }
-        ul {
-            padding: 0;
-            list-style: none;
-            color: #fff;
+        .card:hover {
+            transform: scale(1.05); /* Scale up on hover */
         }
-        li {
-            margin: 10px 0; /* Add some spacing between list items */
+        .view-all-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: white;
+            color: #0b3d91;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .view-all-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            background: #f8f8f8;
         }
         .back-link {
             text-align: center;
@@ -47,25 +59,25 @@
             text-decoration: none;
             font-weight: bold;
         }
+        @media (max-width: 600px) {
+            .stats {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 90%; /* Make cards full width on small screens */
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Doctor Dashboard</h1>
 
     <div class="stats">
-        <div class="card"><h3>Upcoming</h3><p>{{ upcoming_appointments }}</p></div>
-        <div class="card"><h3>Patients Today</h3><p>{{ patients_today }}</p></div>
-        <div class="card"><h3>Pending Requests</h3><p>{{ pending_requests }}</p></div>
+        <div class="card" aria-label="Upcoming appointments"><h3>Upcoming</h3><p>{{ upcoming_appointments }}</p></div>
+        <div class="card" aria-label="Patients today"><h3>Patients Today</h3><p>{{ patients_today }}</p></div>
+        <div class="card" aria-label="Pending requests"><h3>Pending Requests</h3><p>{{ pending_requests }}</p></div>
     </div>
-
-    <h2>Recent Appointments</h2>
-    <ul>
-        {% for appt in recent_appointments %}
-            <li>{{ appt.date }} {{ appt.time }} - {{ appt.patient }} ({{ appt.reason }})</li>
-        {% else %}
-            <li>No recent appointments.</li>
-        {% endfor %}
-    </ul>
 
     <div class="back-link">
         <a href="{{ url_for('home') }}">← Back to Home</a>
