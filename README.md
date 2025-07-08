@@ -1,32 +1,59 @@
-# MedTrack
+# 🩺 MedTrack
 
-A **Flask-based medical appointment and patient management system** that simplifies scheduling, patient tracking, and doctor-patient interaction for small clinics and healthcare providers.
+A Flask-based **Medical Appointment Management System** to simplify patient-doctor appointment workflows, integrated with AWS services for scalable, secure deployment.
 
 ---
 
 ## 🚀 Features
 
 ✅ Patient registration and login  
-✅ Doctor dashboard to view appointments and patients  
-✅ Book and manage appointments  
-✅ Patient dashboard to track upcoming and past appointments  
-✅ Contact page for support  
-✅ Clean, responsive UI using HTML/CSS
+✅ Doctor dashboard to view appointments  
+✅ Book, view, and manage appointments  
+✅ Email confirmation workflows  
+✅ Responsive UI with clean CSS  
+✅ AWS S3 for static file handling  
+✅ Uses environment variables for security
 
 ---
 
-## 🛠️ Tech Stack
+## 📷 Screenshots
 
-- **Backend:** Python, Flask
-- **Frontend:** HTML, CSS (Vanilla)
-- **Database:** (Add SQLite/MySQL/PostgreSQL if applicable)
-- **Hosting:** (Add if you plan to deploy on AWS, Render, etc.)
+### 1️⃣ Home Page
+_Add screenshot here later._
+
+### 2️⃣ Doctor Dashboard
+_Add screenshot here later._
+
+### 3️⃣ Appointment Booking
+_Add screenshot here later._
 
 ---
 
-## ⚙️ Installation
+## 📄 Documentation
 
-1️⃣ **Clone the repository**:
+Full project documentation including:
+- Project workflow and architecture
+- UI workflows and screenshots
+- Flask and AWS integration details
+- Challenges and learnings
+- Future improvements
+
+[📥 Download MedTrack_Documentation.pdf](./MedTrack/MedTrack_Documentation.pdf)
+
+---
+
+## ⚙️ Tech Stack
+
+- Python Flask
+- HTML/CSS
+- AWS S3
+- VS Code
+- Git & GitHub
+
+---
+
+## 🛠️ Installation
+
+1️⃣ Clone the repository:
 ```bash
 git clone https://github.com/sri-nandini786/MedTrack.git
-cd MedTrack
