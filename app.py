@@ -18,7 +18,6 @@ def index():
 def debug():
        return f"Current directory: {os.getcwd()}<br>Templates: {os.listdir('templates')}"
    
-
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
     if request.method == 'POST':
