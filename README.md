@@ -18,8 +18,6 @@ A Flask-based **Medical Appointment Management System** to simplify patient-doct
 
 ## 📷 Screenshots
 
-## 📷 Screenshots
-
 ### 🏠 1️⃣ Home Page
 ![Home Page](screenshots/home_page.png)
 
@@ -28,6 +26,7 @@ A Flask-based **Medical Appointment Management System** to simplify patient-doct
 
 ### 📅 3️⃣ Appointment Booking
 ![Appointment Booking](screenshots/appointment_booking.png)
+
 
 ---
 
