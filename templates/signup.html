@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Sign Up - MedTrack</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             margin: 0;
@@ -16,28 +15,23 @@
             justify-content: center;
             align-items: center;
         }
-
         .signup-box {
             background-color: #fff;
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 12px;
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            width: 90%;
-            max-width: 500px;
+            width: 400px;
         }
-
         h2 {
             text-align: center;
             color: #0b3d91;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
-
         label {
             display: block;
             margin-top: 12px;
             font-weight: bold;
         }
-
         input, select {
             width: 100%;
             padding: 10px;
@@ -46,7 +40,6 @@
             border: 1px solid #ccc;
             box-sizing: border-box;
         }
-
         button {
             width: 100%;
             padding: 12px;
@@ -58,25 +51,17 @@
             font-size: 16px;
             cursor: pointer;
         }
-
         button:hover {
             background-color: #084080;
         }
-
         .login-link {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 15px;
         }
-
         .login-link a {
             color: #0b3d91;
             text-decoration: none;
         }
-
-        .login-link a:hover {
-            text-decoration: underline;
-        }
-
         .message {
             text-align: center;
             margin-top: 10px;
@@ -89,6 +74,7 @@
     <div class="signup-box">
         <h2>Create Account</h2>
 
+        <!-- Flash messages -->
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 {% for category, message in messages %}
@@ -125,9 +111,12 @@
         </form>
 
         <div class="login-link">
-            Already have an account? <a href="{{ url_for('login') }}">Login here</a><br>
-            <a href="{{ url_for('home') }}">← Back to Home</a>
+            Already have an account? <a href="{{ url_for('login') }}">Login here</a>
+        </div>
+    <div style="text-align: center; margin-top: 20px;">
+            <a href="{{ url_for('home') }}" style="color: #0b3d91; text-decoration: none;">← Back to Home</a>
         </div>
     </div>
 </body>
 </html>
+
